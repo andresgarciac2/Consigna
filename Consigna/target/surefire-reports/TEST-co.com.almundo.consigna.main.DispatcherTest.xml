@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="co.com.almundo.consigna.main.AppTest" time="0.002" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="co.com.almundo.consigna.main.DispatcherTest" time="34.113" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
@@ -65,5 +65,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="co.com.almundo.consigna.main.AppTest" name="testApp" time="0.002"/>
+  <testcase classname="co.com.almundo.consigna.main.DispatcherTest" name="requiredTestTenCalls" time="9.101"/>
+  <testcase classname="co.com.almundo.consigna.main.DispatcherTest" name="fiveCallsThreeEmployeesTest" time="16.008"/>
+  <testcase classname="co.com.almundo.consigna.main.DispatcherTest" name="threeCallsFiveEmployeesTest" time="9.004"/>
 </testsuite>

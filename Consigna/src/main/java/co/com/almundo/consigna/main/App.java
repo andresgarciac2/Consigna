@@ -25,10 +25,10 @@ public class App {
 		
 		Consigna.setEmployees(employees);
 		
-		List<Dispath> callables = new ArrayList<>();
+		List<Dispatcher> callables = new ArrayList<>();
 		
 		for(int i = 0; i <=4; i++) {
-			callables.add(new Dispath(new Call(i)));
+			callables.add(new Dispatcher(new Call(i)));
 		}
 
 		executorService.invokeAll(callables).stream().map(future -> {

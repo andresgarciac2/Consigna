@@ -24,7 +24,7 @@ import co.com.almundo.consigna.model.employee.Supervisor;
  * @date 8/04/20148
  *
  */
-public class Dispath implements Callable<Future<Call>>{
+public class Dispatcher implements Callable<Future<Call>>{
 	
 	/**
 	 * The ExecutorService
@@ -41,7 +41,7 @@ public class Dispath implements Callable<Future<Call>>{
 	 * 
 	 * @param call
 	 */
-	public Dispath(Call call) {
+	public Dispatcher(Call call) {
 		
 		this.call = call;
 	}

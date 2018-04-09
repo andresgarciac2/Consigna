@@ -27,7 +27,7 @@ import co.com.almundo.consigna.model.employee.Supervisor;
  * @date 8/04/20148
  *
  */
-public class DispathTest {
+public class DispatcherTest {
 	/**
 	 * the executorService
 	 */
@@ -41,7 +41,7 @@ public class DispathTest {
 	/**
 	 * the callables
 	 */
-	List<Dispath> callables;
+	List<Dispatcher> callables;
 	
 	@Before
 	public void initEnviroment() {
@@ -78,9 +78,9 @@ public class DispathTest {
 	}
 	
 	@Test
-	public void fiveCallsTwoEmployeesTest() throws InterruptedException {
+	public void fiveCallsThreeEmployeesTest() throws InterruptedException {
 
-		fiveCallsAndtwoEmployeesSetUp();
+		fiveCallsAndThreeEmployeesSetUp();
 
 		executorService.invokeAll(callables).stream().map(future -> {
 
@@ -141,21 +141,22 @@ public class DispathTest {
 		callables = new ArrayList<>();
 		
 		for(int i = 0; i < 10; i++) {
-			callables.add(new Dispath(new Call(i)));
+			callables.add(new Dispatcher(new Call(i)));
 		}
 	}
 	
-	private void fiveCallsAndtwoEmployeesSetUp() {
+	private void fiveCallsAndThreeEmployeesSetUp() {
 		
 		employees = Arrays.asList(
 				new Operator(), 
+				new Operator(),
 				new Operator());
 		
 		Consigna.setEmployees(employees);
 		callables = new ArrayList<>();
 		
 		for(int i = 0; i < 5; i++) {
-			callables.add(new Dispath(new Call(i)));
+			callables.add(new Dispatcher(new Call(i)));
 		}
 	}
 	
@@ -172,7 +173,7 @@ public class DispathTest {
 		callables = new ArrayList<>();
 		
 		for(int i = 0; i < 3; i++) {
-			callables.add(new Dispath(new Call(i)));
+			callables.add(new Dispatcher(new Call(i)));
 		}
 	}
 	

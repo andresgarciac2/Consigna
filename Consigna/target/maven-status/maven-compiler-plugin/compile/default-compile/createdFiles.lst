@@ -2,7 +2,6 @@ co\com\almundo\consigna\main\App.class
 co\com\almundo\consigna\model\employee\Operator.class
 co\com\almundo\consigna\constants\Constants.class
 co\com\almundo\consigna\model\employee\Supervisor.class
-co\com\almundo\consigna\main\Dispath.class
 co\com\almundo\consigna\model\call\Call.class
 co\com\almundo\consigna\model\employee\Director.class
 co\com\almundo\consigna\model\employee\Employee.class

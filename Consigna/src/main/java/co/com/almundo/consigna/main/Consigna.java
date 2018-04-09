@@ -62,7 +62,7 @@ public class Consigna {
 	 * 
 	 * @return a call
 	 */
-	public static Call getCallByPriority() {
+	public synchronized static Call getCallByPriority() {
 
 		return pendingCalls.poll();
 	}
